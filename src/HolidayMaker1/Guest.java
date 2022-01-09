@@ -2,44 +2,54 @@ package HolidayMaker1;
 
 public class Guest {
 
-    private String first_Name;
-    private String last_Name;
+    private String firstName;
+    private String lastName;
     private String phoneNumber;
-    private String email_Adress;
-    private String date_Of_Birth;
+    private String emailAdress;
+    private String dateOfBirth;
     private int guest_ID;
     private int reservation_ID;
 
-
-    public Guest(String first_Name, String last_Name, String phoneNumber, String email_Adress, String date_Of_Birth,
-                 int guest_ID, int reservation_ID) {
-        this.first_Name = first_Name;
-        this.last_Name = last_Name;
+    public Guest(String firstName, String lastName, String phoneNumber, String emailAdress, String dateOfBirth, int guest_ID, int reservation_ID) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.phoneNumber = phoneNumber;
-        this.email_Adress = email_Adress;
-        this.date_Of_Birth = date_Of_Birth;
+        this.emailAdress = emailAdress;
+        this.dateOfBirth = dateOfBirth;
         this.guest_ID = guest_ID;
         this.reservation_ID = reservation_ID;
-    }
-
-    public Guest(String firstName, String lastName, String phoneNumber, String emailAdress, String dateOfBirth) {
 
     }
 
-    public String getFirst_Name() {
-        return first_Name;
+    @Override
+    public String toString() {
+        return "Guest{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", emailAdress='" + emailAdress + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", guest_ID=" + guest_ID +
+                ", reservation_ID=" + reservation_ID +
+                '}';
     }
 
-    public void setFirst_Name(String first_Name) {
-        this.first_Name = first_Name;
+
+
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getLast_Name() {
-        return last_Name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void setLast_Name(String last_Name) {
-        this.last_Name = last_Name;
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getPhoneNumber() {
@@ -50,20 +60,20 @@ public class Guest {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getEmail_Adress() {
-        return email_Adress;
+    public String getEmailAdress() {
+        return emailAdress;
     }
 
-    public void setEmail_Adress(String email_Adress) {
-        this.email_Adress = email_Adress;
+    public void setEmailAdress(String emailAdress) {
+        this.emailAdress = emailAdress;
     }
 
-    public String getDate_Of_Birth() {
-        return date_Of_Birth;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setDate_Of_Birth(String date_Of_Birth) {
-        this.date_Of_Birth = date_Of_Birth;
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public int getGuest_ID() {
@@ -83,13 +93,11 @@ public class Guest {
     }
 
 
-
-
-    @Override
-    public String toString() {
-        return "First name: " + first_Name + " " + "Last name: " + last_Name + " " + "Phone number: " + phoneNumber + " " + "Email adress: " + email_Adress + " " + "Date of birth: "+ date_Of_Birth +
-                " " + "Guest ID: " + guest_ID + " " + "Reservation ID: " + reservation_ID ;
     }
-}
+
+
+
+
+
 
 
