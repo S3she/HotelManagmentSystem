@@ -22,6 +22,10 @@ public class Reservation {
         this.roomNumber = roomNumber;
     }
 
+    public Reservation(String check_in, String check_out, int bookRoomSize, int bookHotel_id, int room_number) {
+
+    }
+
     @Override
     public String toString() {
         return "Reservation{" +

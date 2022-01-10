@@ -6,13 +6,25 @@ public class Room {
     private String roomType;
     private int roomCapacity;
     private int roomAmount;
+    private int roomNumber;
 
-    public Room(int roomID, String roomType, int roomCapacity, int roomAmount) {
+
+    public int getRoomNumber() {
+        return roomNumber;
+    }
+
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
+    }
+
+    public Room(int roomID, String roomType, int roomCapacity, int roomAmount, int roomNumber) {
         this.roomID = roomID;
         this.roomType = roomType;
         this.roomCapacity = roomCapacity;
         this.roomAmount = roomAmount;
+        this.roomNumber = roomNumber;
     }
+
 
     @Override
     public String toString() {
@@ -21,6 +33,7 @@ public class Room {
                 ", roomType='" + roomType + '\'' +
                 ", roomCapacity=" + roomCapacity +
                 ", roomAmount=" + roomAmount +
+                ", roomNumber=" + roomNumber +
                 '}';
     }
 
